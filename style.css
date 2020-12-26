@@ -1,0 +1,153 @@
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@font-face {
+    font-family: "futura";
+    src: url("/fonts/Futura Round.ttf") format("truetype");
+}
+
+body {
+    font-family: futura, Arial, sans-serif;
+}
+
+h1 {
+    padding-top: 20vh;
+    margin-left: 100px;
+    -webkit-animation: fadeInLeft 1.5s;
+    -moz-animation: fadeInLeft 1.5s;
+    /*-ms-animation: fadeInLeft 1.5s;*/
+    -o-animation: fadeInLeft 1.5s;
+    animation: fadeInLeft 1.5s;
+}
+
+h2 {
+    padding-top: 30px;
+    margin-left: 100px;
+    /*opacity: 0;*/
+    -webkit-animation: fadein 2.5s;
+    -moz-animation: fadein 2s;
+    /*-ms-animation: fadein 2s;*/
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+button {
+    bottom: 12vh;
+    right: 5vw;
+    background-color: #6b60ea;
+    color: #fff;
+    padding: 15px 32px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: fixed;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #6961ba;
+}
