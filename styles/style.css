@@ -164,7 +164,8 @@ button {
     position: relative;
     font-size: 18px;
     border-color: #6b60ea;
-    border-radius: 8px;
+    border-radius: 10px;
+    outline: none;
 }
 
 button:hover {
