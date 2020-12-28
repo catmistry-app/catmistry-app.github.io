@@ -10,32 +10,32 @@ const data =
         text: "Chemistry, Gamified"
     },
     {
-        url: "https://www.catmistry.cf/images/learn1.jpg",
+        url: "https://www.catmistry.cf/images/learn1.png",
         title: "Learn",
         text: "In a simple-to-understand but detailed manner"
     }, 
     {
-        url: "https://www.catmistry.cf/images/learn2.jpg",
+        url: "https://www.catmistry.cf/images/learn2.png",
         title: "Learn",
         text: "With interactive elements to enhance your understanding"
     },
     {
-        url: "https://www.catmistry.cf/images/learn3.jpg",
+        url: "https://www.catmistry.cf/images/learn3.png",
         title: "Learn",
         text: "Through specially designed graphs made by the CATmistry team"
     }, 
     {
-        url: "https://www.catmistry.cf/images/practice.jpg",
+        url: "https://www.catmistry.cf/images/practice.png",
         title: "Practice",
         text: "Track your understanding and learn more effectively"
     },
     {
-        url: "https://www.catmistry.cf/images/play.jpg",
+        url: "https://www.catmistry.cf/images/play.png",
         title: "Play",
         text: "CATmistry's own games"
     },
     {
-        url: "https://www.catmistry.cf/images/follow.jpg",
+        url: "https://www.catmistry.cf/images/follow.png",
         title: "Follow",
         text: "Your cat on its journey through earth"
     }];
