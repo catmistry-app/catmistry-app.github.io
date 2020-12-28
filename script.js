@@ -45,11 +45,13 @@ const selImg = (anim = true) => {
     const imgElem = $('slideshowImg');
     const titleElem = $('title');
     const subtitleElem = $('text');
+    const appStoreButtonElem = $('appstorebutton');
     let timeout = 0;
     if (anim) {
         imgElem.classList.add('invisible');
         titleElem.classList.add('invisible');
         subtitleElem.classList.add('invisible');
+        appStoreButtonElem.classList.add('invisible');
         timeout = 520;
     }
     setTimeout(() => {
@@ -59,6 +61,7 @@ const selImg = (anim = true) => {
         imgElem.classList.remove('invisible');
         titleElem.classList.remove('invisible');
         subtitleElem.classList.remove('invisible');
+        appStoreButtonElem.classList.remove('invisible');
     }, timeout);
     
     i++;
