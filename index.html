@@ -1,72 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CATmistry</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f2d770">
-    <meta name="author" content="CATmistry">
-    <meta name="description" content="A Chemistry learning app designed for Upper Primary and Lower Secondary students, with interactive elements and fun games to enhance the learning process.">
-    <meta name="keywords" content="chemistry, chemistry learning app, cat mistry, catmistry">
-    <link rel="icon" href="images/favicon.jpg">
-    <link rel="prefetch" href="images/catmistry.png">
-    <link rel="prefetch" href="images/learn1.jpg">
-    <link rel="prefetch" href="images/learn2.jpg">
-    <link rel="prefetch" href="images/learn3.jpg">
-    <link rel="prefetch" href="images/practice.jpg">
-    <link rel="prefetch" href="images/play.jpg">
-    <link rel="prefetch" href="images/follow.jpg">
-</head>
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a href="/">CATmistry</a></li>
-        </ul>
+<div class="grid">
+    <div class="promoText">
+        <h1 id="title" class="animation mdc-typography--headline2">CATmistry</h1>
+        <p id="text" class="animation mdc-typography--headline6">Chemistry, Gamified</p>
+        <button class="mdc-button mdc-button--raised store-button" data-mdc-auto-init="MDCRipple">
+  <div class="mdc-button__ripple"></div>
+  <i class="material-icons mdc-button__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" aria-label="Apple" role="img" viewBox="0 0 512 512"><path fill="#f2f2f2" d="M410 334s-10 29-30 59c-5 9-29 43-58 43-21 0-35-15-62-15-33 0-46 15-67 15-11 1-22-5-34-16-77-73-81-181-52-225 18-29 48-47 81-48 26 0 54 17 65 17 8 0 50-20 74-18 33 3 56 15 73 38-49 24-66 117 10 150zM329 56c8 32-27 93-79 90-3-43 34-87 79-90z"/></svg></i>
+  <span class="mdc-button__label">Download on the App Store</span>
+</button>
     </div>
-    <div class="slideshow">
-        <div class="slide">
-            <img src="images/catmistry.png" class="slide-pic" alt="learn">
-            <div class="main-text">CATmistry</div>
-            <div class="caption-text">Chemistry, Gamified</div>
-        </div>
-        <div class="slide">
-            <img src="images/learn1.jpg" class="slide-pic" alt="learn">
-            <div class="main-text">Learn</div>
-            <div class="caption-text">In a simple-to-understand but detailed manner</div>
-        </div>
-        <div class="slide">
-            <img src="images/learn2.jpg" class="slide-pic" alt="learn">
-            <div class="main-text">Learn</div>
-            <div class="caption-text">With interactive elements to enhance your understanding</div>
-        </div>
-        <div class="slide">
-            <img src="images/learn3.jpg" class="slide-pic" alt="learn">
-            <div class="main-text">Learn</div>
-            <div class="caption-text">Through specially designed graphs made by the CATmistry team</div>
-        </div>
-        <div class="slide">
-            <img src="images/practice.jpg" class="slide-pic" alt="learn">
-            <div class="main-text">Practice</div>
-            <div class="caption-text">Track your understanding and learn more effectively</div>
-        </div>
-        <div class="slide">
-            <img src="images/play.jpg" class="slide-pic" alt="learn">
-            <div class="main-text">Play</div>
-            <div class="caption-text">CATmistry's own games</div>
-        </div>
-        <div class="slide">
-            <img src="images/follow.jpg" class="slide-pic" alt="learn">
-            <div class="main-text">Follow</div>
-            <div class="caption-text">Your cat on its journey through earth</div>
-        </div>
-        <button onclick="window.location.href='https://apps.apple.com/us/app/catmistry/id1545311327'">Download for iOS</button>
+    <div class="imgHolder">
+        <img id="slideshowImg" class="animation">
     </div>
-<!--    <div class="main">-->
-<!--        <h1>CATmistry</h1>-->
-<!--        <h2>Chemistry, Gamified</h2>-->
-<!--        <p>A chemistry learning app designed for upper primary and lower secondary students</p>-->
-<!--    </div>-->
-    <script src="scripts/main.js" defer></script>
-</body>
-</html>
+</div>
