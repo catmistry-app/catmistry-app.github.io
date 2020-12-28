@@ -1,3 +1,3 @@
-# catmistry-ad
+# CATmistry Website
 
-This is a test to see if i can commit
+This is the advert website for CATmistry.
