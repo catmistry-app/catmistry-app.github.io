@@ -56,6 +56,7 @@ const selImg = (anim = true) => {
     }
     setTimeout(() => {
         imgElem.src = data[i].url;
+        imgElem.alt = data[i].title;
         titleElem.textContent = data[i].title;
         subtitleElem.textContent = data[i].text;
         imgElem.classList.remove('invisible');
