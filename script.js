@@ -46,13 +46,15 @@ const selImg = (anim = true) => {
     const titleElem = $('title');
     const subtitleElem = $('text');
     const appStoreButtonElem = $('appstorebutton');
-    let timeout = 500;
+    const samsungStoreButtonElem = $('samsungstorebutton');
+    let timeout = 0;
     if (anim) {
         imgElem.classList.add('invisible');
         titleElem.classList.add('invisible');
         subtitleElem.classList.add('invisible');
         appStoreButtonElem.classList.add('invisible');
-        timeout = 520;
+        samsungStoreButtonElem.classList.add('invisible');
+        timeout = 1000;
     }
     setTimeout(() => {
         imgElem.src = data[i].url;
@@ -63,6 +65,7 @@ const selImg = (anim = true) => {
         titleElem.classList.remove('invisible');
         subtitleElem.classList.remove('invisible');
         appStoreButtonElem.classList.remove('invisible');
+        samsungStoreButtonElem.classList.remove('invisible');
     }, timeout);
     
     i++;
