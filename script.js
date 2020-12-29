@@ -46,7 +46,7 @@ const selImg = (anim = true) => {
     const titleElem = $('title');
     const subtitleElem = $('text');
     const appStoreButtonElem = $('appstorebutton');
-    let timeout = 0;
+    let timeout = 500;
     if (anim) {
         imgElem.classList.add('invisible');
         titleElem.classList.add('invisible');
