@@ -50,7 +50,7 @@ body {
 }
 
 .animation {
-    transition: opacity 1000ms ease-out;
+    transition: opacity 500ms ease-out;
 }
 
 img {
