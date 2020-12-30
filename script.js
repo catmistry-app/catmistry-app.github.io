@@ -47,6 +47,7 @@ const selImg = (anim = true) => {
     const subtitleElem = $('text');
     const appStoreButtonElem = $('appstorebutton');
     const samsungStoreButtonElem = $('samsungstorebutton');
+    const apkButton = $('apkbutton');
     let timeout = 0;
     if (anim) {
         imgElem.classList.add('invisible');
@@ -54,6 +55,7 @@ const selImg = (anim = true) => {
         subtitleElem.classList.add('invisible');
         appStoreButtonElem.classList.add('invisible');
         samsungStoreButtonElem.classList.add('invisible');
+        apkButton.classList.add('invisible');
         timeout = 520;
     }
     setTimeout(() => {
@@ -66,6 +68,7 @@ const selImg = (anim = true) => {
         subtitleElem.classList.remove('invisible');
         appStoreButtonElem.classList.remove('invisible');
         samsungStoreButtonElem.classList.remove('invisible');
+        apkButton.classList.remove('invisible');
     }, timeout);
     
     i++;
