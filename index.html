@@ -47,5 +47,14 @@
 <!-- partial -->
   <script src='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js'></script><script  src="./script.js"></script>
 
+  <script>
+
+// Register service worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+}
+</script>
+  
+  
 </body>
 </html>
