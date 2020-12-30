@@ -54,7 +54,7 @@ const selImg = (anim = true) => {
         subtitleElem.classList.add('invisible');
         appStoreButtonElem.classList.add('invisible');
         samsungStoreButtonElem.classList.add('invisible');
-        timeout = 1000;
+        timeout = 520;
     }
     setTimeout(() => {
         imgElem.src = data[i].url;
