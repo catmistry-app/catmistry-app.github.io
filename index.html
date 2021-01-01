@@ -10,13 +10,20 @@
   <meta name="author" content="CATmistry">
   <meta name="description" content="A Chemistry learning app designed for Upper Primary and Lower Secondary students, with interactive elements and fun games to enhance the learning process.">
   <meta name="keywords" content="chemistry, chemistry learning app, cat mistry, catmistry">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap'>
-<link rel='stylesheet' href='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./style.css">
-<link rel="icon" href="https://www.catmistry.cf/images/favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/rubik.css" rel="stylesheet">
+<link rel='stylesheet' href='styles/material-components-web.min.css'>
+<link rel='stylesheet' href='styles/material-icons.css'>
+    <link rel="stylesheet" href="styles/style.css">
+<link rel="icon" href="images/favicon.ico">
 </head>
 <body>
+<noscript>
+    <p style="position:fixed;z-index: 1; font-size: 18px; color: #f2f2f2">Your browser does not support JavaScript
+<br>
+External link for App Store download: <a style= "color: #f5f5f5" href="https://apps.apple.com/us/app/catmistry/id1545311327">Click here</a>
+    </p>
+</noscript>
 <!-- partial:index.partial.html -->
 <div class="grid">
     <div class="promoText">
@@ -24,19 +31,19 @@
         <p id="text" class="animation mdc-typography--headline6">Chemistry, Gamified</p>
         <button id="appstorebutton" class="animation mdc-button mdc-button--raised store-button" data-mdc-auto-init="MDCRipple" onclick="window.location.href='https://apps.apple.com/us/app/catmistry/id1545311327'">
   <div class="mdc-button__ripple"></div>
-  <i class="material-icons mdc-button__icon fa fa-apple" aria-hidden="true"></i>
+            <i class="material-icons mdc-button__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" aria-label="Apple" role="img" viewBox="0 0 512 512"><path fill="#f2f2f2" d="M410 334s-10 29-30 59c-5 9-29 43-58 43-21 0-35-15-62-15-33 0-46 15-67 15-11 1-22-5-34-16-77-73-81-181-52-225 18-29 48-47 81-48 26 0 54 17 65 17 8 0 50-20 74-18 33 3 56 15 73 38-49 24-66 117 10 150zM329 56c8 32-27 93-79 90-3-43 34-87 79-90z"/></svg></i>
   <span class="mdc-button__label">Download on the App Store</span>
 </button>
         <div style="height: 10px"></div>
         <button id="samsungstorebutton" class="animation mdc-button mdc-button--raised store-button" data-mdc-auto-init="MDCRipple">
             <div class="mdc-button__ripple"></div>
-            <i class="material-icons mdc-button__icon fa fa-android" style="color: #f2f2f2" aria-hidden="true"></i>
+            <i class="material-icons mdc-button__icon" style="color: #f2f2f2" aria-hidden="true">android</i>
             <span class="mdc-button__label">Download on the Samsung Store (Coming Soon)</span>
 </button>
     <div style="height: 10px"></div>
         <button id="apkbutton" class="animation mdc-button mdc-button--raised store-button" data-mdc-auto-init="MDCRipple">
             <div class="mdc-button__ripple"></div>
-            <i class="material-icons mdc-button__icon fa fa-android" style="color: #f2f2f2" aria-hidden="true"></i>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">android</i>
             <span class="mdc-button__label">Download APK (Coming soon)</span>
     </button>
     </div>
@@ -45,16 +52,12 @@
     </div>
 </div>
 <!-- partial -->
-  <script src='https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js'></script><script  src="./script.js"></script>
+  <script src='material-components-web.min.js'></script>
+<script src="./script.js"></script>
 
-  <script>
-
-// Register service worker
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
-}
+<!--<script>if ('serviceWorker' in navigator) {
+navigator.serviceWorker.register('./sw.js');
+}-->
 </script>
-  
-  
 </body>
 </html>
