@@ -1,0 +1,54 @@
+{
+  "short_name": "CryptoAlgo Inc.",
+  "name": "CryptoAlgo Inc.: About us and our projects",
+  "description": "We create beautiful and easy to use apps. Learn more about us and our multiple projects.",
+  "icons": [
+    {
+      "src": "favicon/16x16.png",
+      "type": "image/png",
+      "sizes": "16x16",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/icons/cryptoalgo_s.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/24x24.png",
+      "type": "image/png",
+      "sizes": "24x24",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/32x32.png",
+      "type": "image/png",
+      "sizes": "32x32",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/200x200.png",
+      "type": "image/png",
+      "sizes": "200x200",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#333",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#2f2f2f"
+}

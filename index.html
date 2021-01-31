@@ -1,0 +1,217 @@
+ <!DOCTYPE html>
+<!-- Written by Vincent Kwok - Nov 2020 -->
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <!-- Remove no-js tag if JS runs -->
+    <script>
+        document.documentElement.classList.remove("no-js");
+    </script>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="CryptoAlgo Inc.">
+    <meta name="description" content="We create beautiful and easy to use apps. Our apps include CryptoAlgo and Chatty. ">
+    <meta name="keywords" content="CryptoAlgo, crypto algo, apps, encryption, decryption, chatty, covid 19 cases, android apps">
+    <meta name="theme-color" content="#2f2f2f">
+
+    <!-- CryptoAlgo Inc. Favicon - Must support all browsers! -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/16x16.png"> <!-- Chromium-based -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon/48x48.png">
+    <link rel="icon" type="image/png" sizes="200x200" href="favicon/200x200.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/512x512.png"> <!-- Chrome home screen icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon.png"> <!-- Safari -->
+    <link rel="mask-icon" href="favicon/icon.svg" color="#222222"> <!-- Safari Pinned Tabs -->
+    <link rel="icon" type="image/png" href="favicon/favicon.ico"/> <!-- IE (Ppl still use it) -->
+
+    <!-- Page title -->
+    <title>CryptoAlgo Inc.</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="assets/main.min.css"> <!-- Must be included for all pages!!!-->
+    <link rel="stylesheet" href="assets/index.min.css">
+
+    <!-- MDC Components -->
+    <script src="assets/material-components.min.js" defer></script>
+    <link rel="stylesheet" href="assets/material-components.min.css">
+
+    <!-- Backend JavaScript -->
+    <script src="assets/modernizr-custom.min.js" async></script> <!-- Browser feature detection - load as soon as possible -->
+    <script src="assets/firebase/firebase-app.min.js" defer></script> <!-- Code Firebase library -->
+    <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="assets/firebase/firebase-analytics.min.js" defer></script> <!-- Firebase Analytics -->
+    <script src="assets/firebase/firebase-performance.min.js" defer></script> <!-- Firebase Performance -->
+    <script src="assets/init.min.js" defer></script>
+    <script src="assets/scrollreveal.min.js"></script> <!-- Scroll Reveal Library -->
+    <script src="assets/index.min.js" defer></script> <!-- JavaScript backend for index.html -->
+
+    <!-- Preload resources -->
+    <link rel="preload" href="assets/fonts/material-icons.woff2" as="font" crossorigin="anonymous">
+
+    <!-- Preconnect to required origins -->
+    <link rel="preconnect" href="https://firebaseinstallations.googleapis.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://firebase.googleapis.com">
+
+    <!-- Web Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body class="mdc-typography dark-theme" ondrag="return false">
+<script src="assets/thememanager.min.js" async></script> <!-- Theme manager -->
+
+<!-- Hero banner -->
+<div class="mdc-menu mdc-menu-surface" id="downloadOpts" data-mdc-auto-init="MDCMenu">
+    <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical" tabindex="-1" data-mdc-auto-init="MDCList"
+    id="altDownloads">
+        <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">macOS</span>
+        </li>
+        <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">Android</span>
+        </li>
+        <li class="mdc-list-item" role="menuitem" data-mdc-auto-init="MDCRipple">
+            <span class="mdc-list-item__ripple"></span>
+            <span class="mdc-list-item__text">iOS</span>
+        </li>
+    </ul>
+</div>
+<div class="full-height child-centered" id="hero">
+    <div>
+        <!-- Spinner with logo (spinning contraption) -->
+        <div class="hero-logo" aria-hidden="true">
+            <div class="hero-logo-circles">
+                <img class="hero-logo-circle" src="assets/img/circles/semi-red.svg" aria-hidden="true" draggable="false" alt="Semi-red ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/red.svg" aria-hidden="true" draggable="false" alt="Red ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/semi-orange.svg" aria-hidden="true" draggable="false" alt="Semi-orange ring">
+                <img class="hero-logo-circle" src="assets/img/circles/orange.svg" aria-hidden="true" draggable="false" alt="Orange ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/semi-yellow.svg" aria-hidden="true" draggable="false" alt="Semi-yellow ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/yellow.svg" aria-hidden="true" draggable="false" alt="Yellow ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/semi-green.svg" aria-hidden="true" draggable="false" alt="Semi-green ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/green.svg" aria-hidden="true" draggable="false" alt="Green ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/semi-blue.svg" aria-hidden="true" draggable="false" alt="Semi-blue ring"/>
+                <img class="hero-logo-circle" src="assets/img/circles/blue.svg" aria-hidden="true" draggable="false" alt="Blue ring"/>
+            </div>
+            <img src="assets/img/icons/catmistry.png" />
+        </div>
+
+        <!-- Content -->
+        <div class="text-centered app-content">
+            <h1 class="gradient-text">CATmistry</h1>
+            <h2>
+                Chemistry, gamified
+            </h2>
+            <div class="cta-download">
+                <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple" id="mainDownload" style="--mdc-shape-small:4px 0 0 4px">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">download</i>
+                    <span class="mdc-button__label" id="download-device">Loading download...</span>
+                </button><!--
+                --><button class="mdc-button mdc-button--raised more" id="downloadMore" data-mdc-auto-init="MDCRipple" style="--mdc-shape-small:0 4px 4px 0">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons mdc-button__icon" aria-hidden="true">expand_more</i>
+                </button>
+            </div>
+        </div>
+        <!-- Down button -->
+        <div class="mdc-touch-target-wrapper" aria-hidden="true">
+            <button class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Go to other apps" data-mdc-auto-init="MDCRipple" tabindex="-1"
+                    onclick="document.location.href='#intro'">
+                <div class="mdc-fab__ripple"></div>
+                <span class="material-icons mdc-fab__icon">expand_more</span>
+                <div class="mdc-fab__touch"></div>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="full-height" id="intro">
+    <div class="intro">
+        <div class="intro-card">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell
+                    mdc-layout-grid__cell--span-8-tablet">
+                        <h1 class="load-hidden" id="intro-header">We develop<br>
+                            <span id="great-things">
+                                beautiful</span>
+                            <br>apps
+                        </h1>
+                        <!-- Content -->
+                        <div class="load-hidden">
+                            <h2>CATmistry - Chemistry, gamified</h2>
+                            <p>CATmistry is a Chemistry learning app designed for Upper Primary and Lower Secondary students,
+                                with interactive elements and fun games to enhance the learning process.<br><br>
+                                How it works:<br>
+                                1. Learn and study from the unlocked chapters in the learn section<br>
+                                2. Complete quizzes to unlock the games and next chapter
+                            </p>
+
+                            <!-- Scroll hint -->
+                            <div class="mdc-touch-target-wrapper" aria-hidden="true"> <!-- Increase target area -->
+                                <button class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Go to About CryptoAlgo" data-mdc-auto-init="MDCRipple" tabindex="-1"
+                                        onclick="document.location.href='#about'">
+                                    <div class="mdc-fab__ripple"></div>
+                                    <span class="material-icons mdc-fab__icon">expand_more</span>
+                                    <div class="mdc-fab__touch"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdc-layout-grid__cell
+                    mdc-layout-grid__cell--span-8-tablet load-hidden">
+                        <p>Slideshow goes here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="about" class="text-centered app-content">
+    <div style="padding-bottom:10px">
+        <h1>Queries? Feedback? Suggestions?</h1>
+
+        <!-- Email CTA -->
+        <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple" onclick="document.location.href='mailto:catmistryapp@gmail.com'">
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">email</i>
+            <span class="mdc-button__label">Get in Touch</span>
+        </button>
+    </div>
+</div>
+
+<footer id="footer">
+    <!-- Scroll back to top -->
+    <div class="mdc-touch-target-wrapper" aria-hidden="true"> <!-- Increase target area -->
+        <button class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Scroll to top" data-mdc-auto-init="MDCRipple" tabindex="-1"
+                onclick="document.location.href='#hero'">
+            <div class="mdc-fab__ripple"></div>
+            <span class="material-icons mdc-fab__icon">expand_less</span>
+            <div class="mdc-fab__touch"></div>
+        </button>
+    </div>
+    <h2>CryptoAlgo Inc.</h2>
+    <p>2021 Vincent Kwok</p>
+    <div aria-hidden="true" style="display:none">
+        <a href="https://chattyinc.cf">Chatty</a>
+    </div>
+    <div class="bottom-links" aria-hidden="true">
+        <button class="mdc-button" data-mdc-auto-init="MDCRipple" onclick="document.location.href='https://cryptoalgo.cf'" tabindex="-1">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">CryptoAlgo</span>
+        </button>
+        <button class="mdc-button" data-mdc-auto-init="MDCRipple" onclick="document.location.href='https://chattyinc.cf'" tabindex="-1">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">Chatty</span>
+        </button>
+        <button class="mdc-button" data-mdc-auto-init="MDCRipple" onclick="document.location.href='https://chattyinc.cf'" tabindex="-1">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">Covid'19 Cases</span>
+        </button>
+    </div>
+</footer>
+</body>
+</html>
