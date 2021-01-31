@@ -9,14 +9,14 @@ window.mdc.autoInit(); // Init all MDC elements
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDueuTP0lSoh2Sfg1UcmGVgZmxC_2m__qo",
-    authDomain: "cryptoalgo-inc.firebaseapp.com",
-    databaseURL: "https://cryptoalgo-inc.firebaseio.com",
-    projectId: "cryptoalgo-inc",
-    storageBucket: "cryptoalgo-inc.appspot.com",
-    messagingSenderId: "293181580852",
-    appId: "1:293181580852:web:54b88d52fe57db5b908c61",
-    measurementId: "G-SSXQNRQ7V8"
+    apiKey: "AIzaSyDxsHr0vz6BWG6ywSQid_0irIIAZu2tZ4s",
+    authDomain: "catmistry-android.firebaseapp.com",
+    databaseURL: "https://catmistry-android-default-rtdb.firebaseio.com",
+    projectId: "catmistry-android",
+    storageBucket: "catmistry-android.appspot.com",
+    messagingSenderId: "517918508656",
+    appId: "1:517918508656:web:c9edd254f1b5a2aa40d6b5",
+    measurementId: "G-TEWEFLKHS7"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
