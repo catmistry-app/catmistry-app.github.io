@@ -107,13 +107,16 @@ body {
     /* Other stuff below this point */
     margin: 0;
     background-color: var(--mdc-theme--surface, #000);
-    /* Smooth scrolling */
-    scroll-behavior: smooth;
     transition: background-color 250ms;
     --mdc-theme--surface: var(--main-content-bg, #000);
     --mdc-typography-font-family: Product Sans;
     --mdc-typography-headline1-font-family: Android Euclid;
     --mdc-typography-headline2-font-family: Android Euclid;
+}
+html {
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+    --scroll-behavior: smooth;
 }
 
 h1, h2 {

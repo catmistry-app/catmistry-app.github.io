@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="smoothscroll-polyfill" level="application" />
+    <orderEntry type="library" name="smoothscroll-anchor-polyfill" level="application" />
   </component>
 </module>

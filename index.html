@@ -45,8 +45,10 @@
     <script src="assets/init.min.js" defer></script>
     <script src="assets/scrollreveal.min.js"></script> <!-- Scroll Reveal Library -->
     <script src="assets/index.min.js" defer></script> <!-- JavaScript backend for index.html -->
-    <!-- Smoothscroll polyfill for Safari -->
-    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <!-- Smoothscroll polyfill for unsupported browsers -->
+    <!-- Any polyfill to enable smoothscroll for the JavaScript APIs -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
 
     <!-- Preload resources -->
     <link rel="preload" href="assets/fonts/material-icons.woff2" as="font" crossorigin="anonymous">
@@ -120,12 +122,12 @@
         </div>
         <!-- Down button -->
         <div class="mdc-touch-target-wrapper" aria-hidden="true">
-            <button class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Go to other apps" data-mdc-auto-init="MDCRipple" tabindex="-1"
-                    onclick="document.location.href='#intro'">
+            <a class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Go to other apps" data-mdc-auto-init="MDCRipple" tabindex="-1"
+               href="#intro">
                 <div class="mdc-fab__ripple"></div>
                 <span class="material-icons mdc-fab__icon">expand_more</span>
                 <div class="mdc-fab__touch"></div>
-            </button>
+            </a>
         </div>
     </div>
 </div>
@@ -154,12 +156,12 @@
 
                             <!-- Scroll hint -->
                             <div class="mdc-touch-target-wrapper" aria-hidden="true"> <!-- Increase target area -->
-                                <button class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Go to About CryptoAlgo" data-mdc-auto-init="MDCRipple" tabindex="-1"
-                                        onclick="document.location.href='#about'">
+                                <a class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Go to About CryptoAlgo" data-mdc-auto-init="MDCRipple" tabindex="-1"
+                                   href="#about">
                                     <div class="mdc-fab__ripple"></div>
                                     <span class="material-icons mdc-fab__icon">expand_more</span>
                                     <div class="mdc-fab__touch"></div>
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -189,12 +191,12 @@
 <footer id="footer">
     <!-- Scroll back to top -->
     <div class="mdc-touch-target-wrapper" aria-hidden="true"> <!-- Increase target area -->
-        <button class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Scroll to top" data-mdc-auto-init="MDCRipple" tabindex="-1"
-                onclick="document.location.href='#hero'">
+        <a class="mdc-fab mdc-fab--mini mdc-fab--touch scroll-hint" aria-label="Scroll to top" data-mdc-auto-init="MDCRipple" tabindex="-1"
+                href='#hero'>
             <div class="mdc-fab__ripple"></div>
             <span class="material-icons mdc-fab__icon">expand_less</span>
             <div class="mdc-fab__touch"></div>
-        </button>
+        </a>
     </div>
     <h2>CATmistry Web Dev Team</h2>
     <p>Made by Vincent Kwok. Edited by Wang Zerui.</p>
