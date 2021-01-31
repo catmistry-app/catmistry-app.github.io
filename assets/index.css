@@ -76,6 +76,7 @@
     min-height: inherit;
     border-radius: 1.5em;
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* Thanks safari */
 }
 #intro {
     background-position: center center;
@@ -312,4 +313,5 @@
 /* About section */
 #about {
     backdrop-filter: blur(4px) brightness(80%);
+    -webkit-backdrop-filter: blur(4px) brightness(80%);
 }
