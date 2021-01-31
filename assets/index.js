@@ -1,4 +1,4 @@
-let greatWords = ['awesome', 'time-saving', 'beautiful', 'secure', 'helpful']
+let greatWords = ['educational', 'time-saving', 'beautiful', 'helpful']
 const describeText = document.getElementById('great-things');
 
 const $ = (e) => { return document.getElementById(e) }
