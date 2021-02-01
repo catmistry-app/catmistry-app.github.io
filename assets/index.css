@@ -78,6 +78,9 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px); /* Thanks safari */
 }
+.light-theme .intro-card {
+    background-color: #ffffffaa;
+}
 #intro {
     background-position: center center;
     background-size: cover;
