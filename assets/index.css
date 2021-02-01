@@ -88,11 +88,17 @@
     background-attachment: fixed;
 }
 /* WebP fallbacks */
-.webp #intro {
-    background-image: url("img/intro_bg.webp");
+.webp.dark-theme #intro {
+    background-image: url("img/details-dark.webp");
 }
-.no-js #intro, .no-webp #intro {
-    background-image: url("img/intro_bg.jpg");
+.no-js.dark-theme #intro, .no-webp.dark-theme #intro {
+    background-image: url("img/details-dark.jpg");
+}
+.webp.light-theme #intro {
+    background-image: url("img/details-light.webp");
+}
+.no-js.light-theme #intro, .no-webp.light-theme #intro {
+    background-image: url("img/details-light.jpg");
 }
 .intro {
     padding: 50px;
