@@ -1,1 +1,331 @@
-@charset "UTF-8";/* Global classes *//* Scrolling hint */.scroll-hint {    margin: 20px calc(50% - 20px) !important;}.scroll-hint .material-icons.mdc-fab__icon {    margin-top: 2px;}/* Colorful text */.gradient-text {    text-align: center;    width: 100%;    font-size: 60px;    background: -webkit-linear-gradient(0deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;}/* Subtitle text */.hero-content p {    width: 100%;    text-align: center;}/* Project buttons holder */.projects {    display: flex;    flex-wrap: wrap;    justify-content: center;}/* Button styles */.projects button {    height: 90px;    width: 90px;    margin: 8px;    border-radius: 1em;}.projects button .mdc-button__ripple {    border-radius: inherit;}.projects button picture, .projects button img {    width: 80px;    height: 80px;}/* And this is the container to prevent things from flying everywhere */.hero-container {    display: flex;    align-items: center;    justify-content: center;    width: 100%;    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);    background-position: center center;    background-size: contain;    background-repeat: no-repeat;}/* Tooltip customisation */.mdc-tooltip.mdc-tooltip--multiline .mdc-tooltip__surface {    text-align: center;}/* Intro area */.text-centered {    text-align: center;}.app-content {    padding: 10px;}.intro-card {    padding: 0 20px;    background-color: #000000aa;    min-height: inherit;    border-radius: 1.5em;    backdrop-filter: blur(4px);    -webkit-backdrop-filter: blur(4px); /* Thanks safari */}.light-theme .intro-card {    background-color: #ffffffaa;}#intro {    background-position: center center;    background-size: cover;    background-repeat: no-repeat;    background-attachment: fixed;}/* WebP fallbacks */.webp #intro {    background-image: url("img/intro_bg.webp");}.no-js #intro, .no-webp #intro {    background-image: url("img/intro_bg.jpg");}.intro {    padding: 50px;    min-height: calc(100vh - 100px); /* Calculations... */}.intro-card h1 {    font-size: 50px;    margin-top: 0.5em;}/* Fading text that shows great thing */#great-things {    text-decoration:underline;    text-decoration-style:dotted;    transition: opacity 500ms ease-in-out;    opacity: 1;}#great-things.hide {    opacity: 0;}/* Responsive media tags *//* 321 - 600px */@media screen and (max-width: 600px) and (min-width: 321px) {    .intro {        padding: 20px;        min-height: calc(100vh - 40px);    }}/* < 350px */@media screen and (max-width: 350px) {    .intro {        padding: 0;        min-height: 100vh;    }    .intro-card {        padding: 0;        min-height: 100vh;        border-radius: 0;    }    .hero-box {        margin: 20px;    }}/* < 310px - Small Phones */@media screen and (max-width: 310px) {    .hero-box {        margin: 0;        min-height: 100vh;        border-radius: 0;        background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);        background-position: center center;        background-size: contain;        background-repeat: no-repeat;    }    .hero-content {        margin: 0;        border-radius: 0;        min-height: 100vh;        background-color: #000000aa;    }}/* Apps section */#hero {    background-image: radial-gradient(ellipse closest-side at 50% 50%, #480000, #320000 25%, #000000);    --mdc-theme-primary: #1976d2;}*{    box-sizing: border-box;}.hero-logo {    position: relative;    user-select: none;    background-position: center;    background-repeat: no-repeat;    background-size: 40%;    width: 350px;    height: 350px;    max-height: 70vw;    max-width: 70vw;    margin: auto;}.hero-logo > img {    position: absolute;    top: 30%;    left: 30%;    width: 40%;    border-radius: 100%;}/* Circles */.hero-logo-circles {    position: relative;    width: 350px;    height: 350px;    max-width: inherit;    max-height: inherit;}.hero-logo-circle {    position: absolute;    left: 0;    top: 0;    animation: hero-logo-circle 1s linear infinite;    will-change: transform;    height: inherit;    width: inherit;    min-width: inherit;    min-height: inherit;    max-width: inherit;    max-height: inherit;}/* Download button */.cta-download > .more {    min-width: unset;    margin-left: 1px;}.cta-download > .more > .mdc-button__icon {    margin-left: -5px;    margin-right: -5px;}/* Spinning animation */@keyframes hero-logo-circle {    100% {        transform: rotate(1turn)    }}/* Each circle spins at different speeds */.hero-logo-circle:nth-child(1) {    animation-duration: 30s}.hero-logo-circle:nth-child(2) {    animation-duration: 40s}.hero-logo-circle:nth-child(3) {    animation-duration: 50s}.hero-logo-circle:nth-child(4) {    animation-duration: 60s}.hero-logo-circle:nth-child(5) {    animation-duration: 70s}.hero-logo-circle:nth-child(6) {    animation-duration: 80s}.hero-logo-circle:nth-child(7) {    animation-duration: 90s}.hero-logo-circle:nth-child(8) {    animation-duration: 100s}.hero-logo-circle:nth-child(9) {    animation-duration: 110s}.hero-logo-circle:nth-child(10) {    animation-duration: 120s}/* Grid */#apps-other .container {    display: -ms-grid;    display: grid;    grid-template-rows: repeat(1, 1fr);    grid-template-columns: repeat(2, 1fr);    width: 100%;}.grid-1 {    -ms-grid-column: 1;    grid-column-start: 1;    grid-column-end: 1;    -ms-grid-row: 1;    grid-row: 1;    background-image: radial-gradient(ellipse closest-side at 50% 50%, #00005a, #000040 25%, #000000);}.grid-2 {    -ms-grid-column: 2;    grid-column-start: 2;    grid-column-end: 2;    -ms-grid-row: 1;    grid-row: 1;    background-image: radial-gradient(ellipse closest-side at 50% 50%, #560027, #45001f 25%, #000000);}@media screen and (max-width: 500px) {    #apps-other .container {        grid-template-rows: repeat(2, 1fr);    }    .grid-1 {        -ms-grid-column: 1;        grid-column-start: 1;        grid-column-end: 3;        -ms-grid-row: 1;        grid-row: 1;    }    .grid-2 {        -ms-grid-column: 1;        grid-column-start: 1;        grid-column-end: 3;        -ms-grid-row: 2;        grid-row: 2;    }}.other-apps img {    object-fit: contain;    width: 200px;    height: 200px;    max-width: 70%;}.app-content.other-apps {    padding: 25px;}.callout {    margin: 0;}/* About section */#about {    backdrop-filter: blur(4px) brightness(80%);    -webkit-backdrop-filter: blur(4px) brightness(80%);}
+@charset "UTF-8";
+
+/* Global classes */
+/* Scrolling hint */
+.scroll-hint {
+    margin: 20px calc(50% - 20px) !important;
+}
+.scroll-hint .material-icons.mdc-fab__icon {
+    margin-top: 2px;
+}
+
+/* Colorful text */
+.gradient-text {
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    background: -webkit-linear-gradient(0deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* Subtitle text */
+.hero-content p {
+    width: 100%;
+    text-align: center;
+}
+
+/* Project buttons holder */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Button styles */
+.projects button {
+    height: 90px;
+    width: 90px;
+    margin: 8px;
+    border-radius: 1em;
+}
+.projects button .mdc-button__ripple {
+    border-radius: inherit;
+}
+.projects button picture, .projects button img {
+    width: 80px;
+    height: 80px;
+}
+
+/* And this is the container to prevent things from flying everywhere */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Tooltip customisation */
+.mdc-tooltip.mdc-tooltip--multiline .mdc-tooltip__surface {
+    text-align: center;
+}
+
+/* Intro area */
+.text-centered {
+    text-align: center;
+}
+.app-content {
+    padding: 10px;
+}
+
+.intro-card {
+    padding: 0 20px;
+    background-color: #000000aa;
+    min-height: inherit;
+    border-radius: 1.5em;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* Thanks safari */
+}
+.light-theme .intro-card {
+    background-color: #ffffffaa;
+}
+#intro {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* WebP fallbacks */
+.webp .dark-theme #intro {
+    background-image: url("img/details-dark.webp");
+}
+.no-js .dark-theme #intro, .no-webp.dark-theme #intro {
+    background-image: url("img/details-dark.jpg");
+}
+.webp .light-theme #intro {
+    background-image: url("img/details-light.webp");
+}
+.no-js .light-theme #intro, .no-webp .light-theme #intro {
+    background-image: url("img/details-light.jpg");
+}
+.intro {
+    padding: 50px;
+    min-height: calc(100vh - 100px); /* Calculations... */
+}
+.intro-card h1 {
+    font-size: 50px;
+    margin-top: 0.5em;
+}
+/* Fading text that shows great thing */
+#great-things {
+    text-decoration:underline;
+    text-decoration-style:dotted;
+    transition: opacity 500ms ease-in-out;
+    opacity: 1;
+}
+#great-things.hide {
+    opacity: 0;
+}
+
+/* Responsive media tags */
+/* 321 - 600px */
+@media screen and (max-width: 600px) and (min-width: 321px) {
+    .intro {
+        padding: 20px;
+        min-height: calc(100vh - 40px);
+    }
+}
+/* < 350px */
+@media screen and (max-width: 350px) {
+    .intro {
+        padding: 0;
+        min-height: 100vh;
+    }
+    .intro-card {
+        padding: 0;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    .hero-box {
+        margin: 20px;
+    }
+}
+/* < 310px - Small Phones */
+@media screen and (max-width: 310px) {
+    .hero-box {
+        margin: 0;
+        min-height: 100vh;
+        border-radius: 0;
+        background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .hero-content {
+        margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
+        background-color: #000000aa;
+    }
+}
+
+/* Apps section */
+#hero {
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, #480000, #320000 25%, #000000);
+    --mdc-theme-primary: #1976d2;
+}
+*{
+    box-sizing: border-box;
+}
+.hero-logo {
+    position: relative;
+    user-select: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    width: 350px;
+    height: 350px;
+    max-height: 70vw;
+    max-width: 70vw;
+    margin: auto;
+}
+.hero-logo > img {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    border-radius: 100%;
+}
+/* Circles */
+.hero-logo-circles {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    max-width: inherit;
+    max-height: inherit;
+}
+.hero-logo-circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: hero-logo-circle 1s linear infinite;
+    will-change: transform;
+    height: inherit;
+    width: inherit;
+    min-width: inherit;
+    min-height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+/* Download button */
+.cta-download > .more {
+    min-width: unset;
+    margin-left: 1px;
+}
+.cta-download > .more > .mdc-button__icon {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+/* Spinning animation */
+@keyframes hero-logo-circle {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+/* Each circle spins at different speeds */
+.hero-logo-circle:nth-child(1) {
+    animation-duration: 30s
+}
+.hero-logo-circle:nth-child(2) {
+    animation-duration: 40s
+}
+.hero-logo-circle:nth-child(3) {
+    animation-duration: 50s
+}
+.hero-logo-circle:nth-child(4) {
+    animation-duration: 60s
+}
+.hero-logo-circle:nth-child(5) {
+    animation-duration: 70s
+}
+.hero-logo-circle:nth-child(6) {
+    animation-duration: 80s
+}
+.hero-logo-circle:nth-child(7) {
+    animation-duration: 90s
+}
+.hero-logo-circle:nth-child(8) {
+    animation-duration: 100s
+}
+.hero-logo-circle:nth-child(9) {
+    animation-duration: 110s
+}
+.hero-logo-circle:nth-child(10) {
+    animation-duration: 120s
+}
+
+/* Grid */
+#apps-other .container {
+    display: -ms-grid;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.grid-1 {
+    -ms-grid-column: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, #00005a, #000040 25%, #000000);
+}
+
+.grid-2 {
+    -ms-grid-column: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, #560027, #45001f 25%, #000000);
+}
+
+@media screen and (max-width: 500px) {
+    #apps-other .container {
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .grid-1 {
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        -ms-grid-row: 1;
+        grid-row: 1;
+    }
+    .grid-2 {
+        -ms-grid-column: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        -ms-grid-row: 2;
+        grid-row: 2;
+    }
+}
+
+.other-apps img {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    max-width: 70%;
+}
+
+.app-content.other-apps {
+    padding: 25px;
+}
+
+.callout {
+    margin: 0;
+}
+
+/* About section */
+#about {
+    backdrop-filter: blur(4px) brightness(80%);
+    -webkit-backdrop-filter: blur(4px) brightness(80%);
+}
+.light-theme #about {
+    backdrop-filter: blur(4px) brightness(150%);
+    -webkit-backdrop-filter: blur(4px) brightness(150%);
+    background-color: #ffffff66;
+}

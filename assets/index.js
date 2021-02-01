@@ -55,11 +55,11 @@ function getOS() {
         iosPlatforms = ['iPhone', 'iPad', 'iPod'],
         os = null;
 
-    if (macosPlatforms.indexOf(platform) !== -1) os = 1;
-    else if (iosPlatforms.indexOf(platform) !== -1) os = 2;
-    else if (windowsPlatforms.indexOf(platform) !== -1) os = 3;
-    else if (/Android/.test(userAgent)) os = 4;
-    else if (!os && /Linux/.test(platform)) os = 5;
+    if (macosPlatforms.indexOf(platform) !== -1) os = 0;
+    else if (iosPlatforms.indexOf(platform) !== -1) os = 1;
+    else if (windowsPlatforms.indexOf(platform) !== -1) os = 2;
+    else if (/Android/.test(userAgent)) os = 3;
+    else if (!os && /Linux/.test(platform)) os = 4;
 
     return os;
 }

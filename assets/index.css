@@ -88,16 +88,16 @@
     background-attachment: fixed;
 }
 /* WebP fallbacks */
-.webp.dark-theme #intro {
+.webp .dark-theme #intro {
     background-image: url("img/details-dark.webp");
 }
-.no-js.dark-theme #intro, .no-webp.dark-theme #intro {
+.no-js .dark-theme #intro, .no-webp.dark-theme #intro {
     background-image: url("img/details-dark.jpg");
 }
-.webp.light-theme #intro {
+.webp .light-theme #intro {
     background-image: url("img/details-light.webp");
 }
-.no-js.light-theme #intro, .no-webp.light-theme #intro {
+.no-js .light-theme #intro, .no-webp .light-theme #intro {
     background-image: url("img/details-light.jpg");
 }
 .intro {
@@ -323,4 +323,9 @@
 #about {
     backdrop-filter: blur(4px) brightness(80%);
     -webkit-backdrop-filter: blur(4px) brightness(80%);
+}
+.light-theme #about {
+    backdrop-filter: blur(4px) brightness(150%);
+    -webkit-backdrop-filter: blur(4px) brightness(150%);
+    background-color: #ffffffcc;
 }
