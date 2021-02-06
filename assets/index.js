@@ -64,11 +64,11 @@ function getOS() {
     return os;
 }
 
-const btnTextStr = ['Download on the App Store', 'Download on the App Store', 'Not available', 'Get it on the Galaxy Store', 'Not available', 'Download APK'];
+const btnTextStr = ['Download on the App Store', 'Download on the App Store', 'Not available', 'Download APK', 'Not available'];
 const btnLinkStr = ['https://apps.apple.com/sg/app/catmistry/id1545311327',
     'https://apps.apple.com/sg/app/catmistry/id1545311327',
     '',
-    'coming5oon',
+    'https://github.com/cryptoAlgorithm/CATmistry/releases/download/v0.4.21/app-release.apk',
     ''];
 
 const addAltDownload = (text, href) => {

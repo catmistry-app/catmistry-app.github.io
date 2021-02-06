@@ -107,7 +107,8 @@ body {
     /* Other stuff below this point */
     margin: 0;
     background-color: var(--mdc-theme--surface, #000);
-    transition: background-color 250ms;
+    transition: all 250ms;
+    transition-property: background-color, color, background;
     --mdc-theme--surface: var(--main-content-bg, #000);
     --mdc-typography-font-family: Product Sans;
     --mdc-typography-headline1-font-family: Android Euclid;
