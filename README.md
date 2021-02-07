@@ -39,7 +39,7 @@ This is the github repository for CATmistry Web. Do not open issues or discussio
    [Discussions](https://github.com/catmistry-app/catmistry-app.github.io/issues) as
    well.
 3. To contact us directly, email us at
-   [catmistryapp@gmail.com](catmistryapp@gmail.com).
+   [contact@catmistry.cf](contact@catmistry.cf).
 
 ## Contributing
 
