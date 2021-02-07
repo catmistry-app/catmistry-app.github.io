@@ -4,6 +4,8 @@
 [![Language](http://img.shields.io/badge/css-3-blue.svg?style=flat)]()
 [![Language](http://img.shields.io/badge/javascript-grey.svg?style=flat)]()
 
+[![GitHub contributors](https://img.shields.io/github/contributors/swiftaccelerator2020/CATmistry)](https://github.com/swiftaccelerator2020/graphs/contributors)
+
 [![GitHub issues](https://img.shields.io/github/issues/catmistry-app/catmistry-app.github.io)](https://github.com/catmistry-app/catmistry-app.github.io/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/catmistry-app/catmistry-app.github.io)](https://github.com/catmistry-app/catmistry-app.github.io/pull)
 
