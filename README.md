@@ -1,12 +1,15 @@
 # CATmistry Web 😺🧪
 
-[![Language](http://img.shields.io/badge/swift-5-orange.svg?style=flat)](https://developer.apple.com/swift)
-[![Xcode](http://img.shields.io/badge/xcode-12.2-red.svg?style=flat)](https://developer.apple.com/xcode)
+[![Language](http://img.shields.io/badge/html-5-red.svg?style=flat)]()
+[![Language](http://img.shields.io/badge/css-3-blue.svg?style=flat)]()
+[![Language](http://img.shields.io/badge/javascript-grey.svg?style=flat)]()
 
-[![GitHub issues](https://img.shields.io/github/issues/swiftaccelerator2020/CATmistry)](https://github.com/swiftaccelerator2020/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/swiftaccelerator2020/CATmistry)](https://github.com/swiftaccelerator2020/pull)
+[![GitHub contributors](https://img.shields.io/github/contributors/swiftaccelerator2020/CATmistry)](https://github.com/swiftaccelerator2020/graphs/contributors)
 
-CATmistry was built to aid upper primary to lower secondary school students in
+[![GitHub issues](https://img.shields.io/github/issues/catmistry-app/catmistry-app.github.io)](https://github.com/catmistry-app/catmistry-app.github.io/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/catmistry-app/catmistry-app.github.io)](https://github.com/catmistry-app/catmistry-app.github.io/pull)
+
+CATmistry **(App)** was built to aid upper primary to lower secondary school students in
 their Chemistry learning journey. As many other Chemistry apps currently present
 in the market cater largely to the undergrad/professional market, we find that
 there is a lack of such apps tailored to the needs of the younger population.
@@ -15,20 +18,23 @@ concise manner that would be the most suitable for our target age group.
 Alongside the learn and information sections are mini-games and interactive
 elements to provide for a fun and engaging learning experience.
 
-CATmistry Web was built by Wang Zerui, Ding Chenghao and Vincent Kwok under the CATmistry Web Team.
+CATmistry **(App)** was built by Neo Hao Jun, Wang Zerui, Chanel Tan Qian Ai, and Ryu
+Hwina under the 2020 Swift Accelerators' Programme.
 
-## Installation
+CATmistry **Web** was built by Wang Zerui, Ding Chenghao and Vincent Kwok, as a promotional channel for the original mobile application.
 
-CATmistry is available for iOS, MacOS and iPadOS 14 on the
+## Installation (App)
+
+CATmistry is available for iOS 13, iPadOS 13, and macOS Big Sur on the
 [App Store](https://apps.apple.com/us/app/catmistry/id1545311327).
 
-[![App Store](https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg)](https://apps.apple.com/us/app/catmistry/id1545311327)
+[![App Store](https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-US?size=250x83&amp;releaseDate=1541376000&h=561e05398c4a2a59b5e291212d641520)](https://apps.apple.com/us/app/catmistry/id1545311327)
 
-Use the web version at [CATmistry](https://www.catmistry.cf/).
+CATmistry's website can be found [here](https://www.catmistry.cf/).
 
 ## Support
 
-This is the github repository for CATmistry Web. Do not open issues or discussion for CATmistry iOS App here. Please state your issues for the app at the [CATmistry App Repo](https://github.com/swiftaccelerator2020/CATmistry).
+This is the GitHub repository for CATmistry **Web**. Do not open issues or discussion for CATmistry **App** here. Please state your suggestions for the app on the [CATmistry-iOS Repo](https://github.com/swiftaccelerator2020/CATmistry) instead.
 
 1. For Bug Reports and Feature Requests, feel free to open an
    [issue](https://github.com/catmistry-app/catmistry-app.github.io/issues) using the
@@ -52,7 +58,14 @@ and [contributing guidelines](CONTRIBUTING).
 
 ## Authors and Acknowledgements
 
-Wang Zerui, Ding Chenghao and Vincent Kwok
+<a href="https://github.com/catmistry-app/catmistry-app.github.io/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=catmistry-app/catmistry-app.github.io" />
+</a>
+
+### The CATmistry Web Team:
+1. Wang Zerui
+2. Ding Chenghao
+3. Vincent Kwok
 
 ## License 📜 [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
