@@ -62,7 +62,7 @@ and [contributing guidelines](CONTRIBUTING).
   <img src="https://contrib.rocks/image?repo=catmistry-app/catmistry-app.github.io" />
 </a>
 
-The CATmistry Web Team:
+### The CATmistry Web Team:
 1. Wang Zerui
 2. Ding Chenghao
 3. Vincent Kwok
